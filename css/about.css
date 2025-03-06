@@ -2,76 +2,99 @@
 #about {
     display: flex;
     align-items: center;
-    padding: 100px 20px;
+    justify-content: center; /* Center the content */
+    flex-direction: row;
+    padding: 80px 20px;
     max-width: 1400px;
-    margin: 0 auto;
-    margin-right: 20px;
+    width: 90%;
+    margin: 90px auto 0;
     min-height: 90vh;
-    /* This is used to scroll in a good position */
     scroll-margin-top: 80px;
+    margin-left: 10%; /* Pushes the entire section slightly to the right */
 }
 
+/* About Text */
 .about-text {
     flex: 1;
     padding: 0 40px;
-    margin-left: -20px;
+    text-align: left;
 }
 
 .about-text h2 {
-    text-align: center; /* Center the header text */
+    text-align: center;
     font-size: 40px;
-    margin: 0 auto 30px auto; /* Automatically adjust the top margin */
-    width: 100%; /* Ensure the h2 spans the full width of the container */
-    display: block; /* Makes sure it behaves like a block element */
+    margin-bottom: 30px;
 }
 
 .about-text p {
     font-size: 20px;
     line-height: 1.7;
-    text-align: left;
     color: var(--text-dark);
 }
 
+/* About Image */
 .about-image {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .about-image img {
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    max-width: 400px; /* Ensures image doesn’t get too big */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
     object-fit: contain;
-    object-position: center;
     border: 5px solid var(--white);
-    box-sizing: border-box;
 }
 
-.about-image img:hover {
-    transform: scale(1.02);
-}
-
+/* Responsive Design */
 @media (max-width: 1024px) {
-    .about-container {
+    #about {
         flex-direction: column;
-    }
-    
-    .about-image {
-        flex-direction: row;
-        margin-top: 30px;
-    }
-    
-    .about-item {
         text-align: center;
+        gap: 30px;
+    }
+
+    .about-text {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .about-image {
-        flex-direction: column;
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .about-image img {
+        max-width: 300px; /* Reduce image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-image img {
+        max-width: 250px;
     }
 }
