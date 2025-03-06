@@ -45,7 +45,7 @@
     font-size: 20px;
 }
 
-.experience-item p {
+.experience-item li {
     font-size: 18px;
     line-height: 1.6;
     color: var(--text-light);
