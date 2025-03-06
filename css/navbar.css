@@ -7,7 +7,7 @@
     background-color: var(--white);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    padding: 15px 0; /* Increased padding for better spacing */
+    padding: 30px 0; /* Increased padding for better spacing */
 }
 
 /* Ensure body content doesn't get hidden under fixed navbar */
