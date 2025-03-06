@@ -2,15 +2,15 @@
 .main_section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Keeps original positioning */
     flex-direction: row;
-    padding: 80px 20px;
+    padding: 80px 20px; /* Reset to your original padding */
     max-width: 1400px;
     width: 90%;
-    margin: 90px auto 0;
+    margin: 90px auto 0; /* Keeps the same margin */
     min-height: 90vh;
     gap: 20px;
-    margin-left: 10%; /* Pushes the entire section slightly to the right */
+    margin-left: 10%; /* Retains the slight right shift */
 }
 
 /* Left Box */
@@ -20,7 +20,7 @@
     padding: 0 20px;
     flex: 1;
     max-width: 600px;
-    padding-left: 40px; /* Pushes text to the right */
+    padding-left: 40px; /* Keeps text positioning */
 }
 
 .left_box h1 {
@@ -40,8 +40,8 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    padding-right: 20px; /* Pushes image slightly right */
-    margin-left: 9%
+    padding-right: 20px;
+    margin-left: 9%;
 }
 
 .right_box img {
@@ -65,16 +65,17 @@
         flex-direction: column;
         text-align: center;
         gap: 40px;
-        margin-left: 0; /* Centering on smaller screens */
+        margin-left: 0; /* Ensures proper centering */
+        padding-top: 100px; /* Adjust to prevent navbar overlap */
     }
 
     .left_box {
-        padding-left: 0; /* Reset padding for mobile */
+        padding-left: 0;
         text-align: center;
     }
 
     .right_box {
-        padding-right: 0; /* Reset padding for mobile */
+        padding-right: 0;
     }
 
     .left_box, .right_box {
@@ -95,6 +96,10 @@
 @media (max-width: 480px) {
     .left_box h1 {
         font-size: 32px;
+    }
+
+    .left_box h2 {
+        font-size: 20px;
     }
 
     .right_box img {
