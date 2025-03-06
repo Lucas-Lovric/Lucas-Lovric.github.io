@@ -1,0 +1,51 @@
+/* 
+   Main CSS file with global styles and color scheme
+*/
+
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier Prime", monospace !important;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+/* ===== Color Scheme ===== */
+:root {
+    --berkeley-blue: #003262;
+    --berkeley-gold: #FDB515;
+    --king-purple: purple;
+    --text-dark: #333;
+    --text-light: #555;
+    --background-light: #fafafa;
+    --white: #fff;
+}
+
+.KingPurple {
+    color: var(--king-purple);
+}
+
+.BerkBlue {
+    color: var(--berkeley-blue);
+}
+
+.BerkGold {
+    color: var(--berkeley-gold);
+}
+
+/* ===== Responsive Design (Global) ===== */
+@media (max-width: 1024px) {
+    /* Global responsive styles */
+}
+
+@media (max-width: 768px) {
+    /* Global responsive styles */
+}
+
+@media (max-width: 480px) {
+    /* Global responsive styles */
+}
