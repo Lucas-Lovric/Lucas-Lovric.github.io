@@ -81,36 +81,56 @@ html {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 5px 0;
+    }
+    
     .navbar nav {
         flex-direction: column;
-        padding: 15px;
+        padding: 10px;
         text-align: center;
+        min-height: auto;
+    }
+    
+    .navbar nav h1 {
+        font-size: 24px;
+        margin: 0;
     }
     
     .navbar nav ul {
         justify-content: center;
-        margin-top: 15px;
+        margin: 10px 0 5px;
         font-size: 16px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .navbar nav ul li a {
+        padding: 6px 10px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 3px 0;
+    }
+    
+    .navbar nav {
+        padding: 8px;
+    }
+    
     .navbar nav h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     
     .navbar nav ul {
-        flex-direction: column;
-        width: 100%;
-        gap: 8px;
-    }
-    
-    .navbar nav ul li {
-        width: 100%;
+        gap: 3px;
+        margin: 8px 0 3px;
     }
     
     .navbar nav ul li a {
-        text-align: center;
-        padding: 12px;
+        padding: 5px 8px;
+        font-size: 14px;
     }
 }
