@@ -68,10 +68,14 @@
 }
 
 .image1 {
-    background-color: #232f3e;  /* Dark color for image1 */
+    background-color: white;  /* Dark color for image1 */
 }
 
 .image2 {
+    background-color: #232f3e;  /* Dark color for image1 */
+}
+
+.image3 {
     background-color: white;  /* Light color for image2 */
 }
 
