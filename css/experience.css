@@ -52,7 +52,7 @@
 }
 
 .experience-images {
-    flex: 2;
+    flex: 0.75;
     display: flex;
     flex-direction: column;
     gap: 20px;
